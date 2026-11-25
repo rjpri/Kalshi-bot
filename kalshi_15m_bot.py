@@ -29,8 +29,8 @@ from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 
 # ---------------------------------------------------------------- config ---
-USE_DEMO = True          # False = real money
-DRY_RUN = True           # True = simulate fills, place nothing
+USE_DEMO = False          # False = real money
+DRY_RUN = False           # True = simulate fills, place nothing
 
 SERIES = ["KXBTC15M", "KXETH15M", "KXSOL15M", "KXXRP15M"]  # edit as needed
 
