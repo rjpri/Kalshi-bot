@@ -30,7 +30,8 @@ from cryptography.hazmat.primitives.asymmetric import padding
 
 # ---------------------------------------------------------------- config ---
 USE_DEMO = False          # False = real money
-DRY_RUN = False           # True = simulate fills, place nothing
+DRY_RUN = true
+# True = simulate fills, place nothing
 
 SERIES = ["KXBTC15M", "KXETH15M", "KXSOL15M", "KXXRP15M"]  # edit as needed
 
@@ -39,7 +40,7 @@ MAX_PRICE = 0.999
 WINDOW_SECONDS = 120     # only trade in the last 2 minutes
 MIN_SECONDS_LEFT = 4     # don't fire so late the market closes mid-order
 
-MAX_TRADE_DOLLARS = 1500.00    # hard cap per trade, never scaled up
+MAX_TRADE_DOLLARS = 25.00    # hard cap per trade, never scaled up
 MAX_OPEN_EXPOSURE = 1500.00    # cap on total unsettled cost across ALL markets.
                                # 1500 = one trade at a time. Raise it if you want
                                # several markets at once (each still <= 1500).
